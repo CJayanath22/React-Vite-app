@@ -53,7 +53,10 @@ function App() {
                     return (
                         <>
 
-                            <div className="card" key={index}>
+                            <div className="card" key={index} onClick={
+                                ()=>{
+                                    console.log(data);
+                                }}>
                                 <img src={data.avatar} className="card-img-top" alt="..."/>
                                 <div className="card-body">
                                     <h5 className={data.customerName}>Card title</h5>
